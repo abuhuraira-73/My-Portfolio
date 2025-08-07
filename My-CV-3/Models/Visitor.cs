@@ -21,5 +21,11 @@ namespace My_CV_3.Models
 
         [BsonElement("VisitedAt")]
         public DateTime VisitedAt { get; set; } = DateTime.UtcNow;
+
+        [BsonElement("VisitedAtFormatted")]
+        public string VisitedAtFormatted { get; set; } = TimeZoneInfo
+    .ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("India Standard Time"))
+    .ToString("dd-MM-yyyy hh:mm tt");
+
     }
 }
