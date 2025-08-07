@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Visitor Statistics";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center">Visitor Statistics</h2>
+                </div>
+                <div class="card-body">
+                    <div class="text-center">
+                        <h3>Total Visits</h3>
+                        <div class="display-1 my-4">@ViewBag.VisitorCount</div>
+                        <p class="text-muted">This counter tracks all page visits to your website.</p>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
