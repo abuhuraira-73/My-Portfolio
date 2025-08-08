@@ -41,7 +41,7 @@ Add a new collection name for visitors in the existing MongoDB settings:
 
 ```json
 "MongoDbSettings": {
-  "ConnectionString": "mongodb+srv://abuhurairajamal:5UQ4ls4HgZvpjknO@chromaic.ceyrj.mongodb.net/my-cv?retryWrites=true&w=majority&appName=Chromaic",
+  "ConnectionString": "",
   "DatabaseName": "my-cv",
   "ContactCollectionName": "contact",
   "VisitorCollectionName": "visitors"
